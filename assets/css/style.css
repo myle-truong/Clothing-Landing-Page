@@ -1,0 +1,37 @@
+/*=== Google fonts ===*/
+@import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Nunito:ital,wght@0,200;0,400;1,200&family=Varela+Round&display=swap");
+
+
+/*=== Variables===*/
+:root {
+
+     /*=== Colors ===*/
+  --primary-color: #ff5a5f;
+  --secondary-color: #2f353d;
+  --tertiary-color: #f5f5f5;
+  --quaternary-color: #f5f5f5;
+  --quinary-color: #f5f5f5;
+  --senary-color: #f5f5f5;
+  --septenary-color: #f5f5f5;
+  --octonary-color: #f5f5f5;
+  --nonary-color: #f5f5f5;
+  --denary-color: #f5f5f5;
+  --decimal-color: #f5f5f5;
+  --undecimal-color: #f5f5f5;
+  --duodecimal-color: #f5f5f5;
+  --tredecimal-color: #f5f5f5;
+  --quadecimal-color: #f5f5f5;
+  --quindecimal-color: #f5f5f5;
+  --sexdecimal-color: #f5f5f5;
+  --septendecimal-color: #f5f5f5;
+  --octodecimal-color: #f5f5f5;
+  --nonadecimal-color: #f5f5f5;
+  --vigintdecimal-color: #f5f5f5;
+  --centillion-color: #f5f5f5;
+  --primary-bg-color: #f5f5f5;
+  --secondary-bg-color: #f5f5f5;
+  --tertiary-bg-color: #f5f5f5;
+  --quaternary-bg-color: #f5f5f5;
+  --quinary-bg-color: #f5f5f5;
+  --senary-bg-color: #f5f5f5;
+  --septenary-bg-color: #f5f5f5;
