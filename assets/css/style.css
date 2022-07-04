@@ -1,37 +1,151 @@
 /*=== Google fonts ===*/
 @import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Nunito:ital,wght@0,200;0,400;1,200&family=Varela+Round&display=swap");
 
-
 /*=== Variables===*/
 :root {
+  --header-gap: 3.5rem;
 
-     /*=== Colors ===*/
-  --primary-color: #ff5a5f;
-  --secondary-color: #2f353d;
-  --tertiary-color: #f5f5f5;
-  --quaternary-color: #f5f5f5;
-  --quinary-color: #f5f5f5;
-  --senary-color: #f5f5f5;
-  --septenary-color: #f5f5f5;
-  --octonary-color: #f5f5f5;
-  --nonary-color: #f5f5f5;
-  --denary-color: #f5f5f5;
-  --decimal-color: #f5f5f5;
-  --undecimal-color: #f5f5f5;
-  --duodecimal-color: #f5f5f5;
-  --tredecimal-color: #f5f5f5;
-  --quadecimal-color: #f5f5f5;
-  --quindecimal-color: #f5f5f5;
-  --sexdecimal-color: #f5f5f5;
-  --septendecimal-color: #f5f5f5;
-  --octodecimal-color: #f5f5f5;
-  --nonadecimal-color: #f5f5f5;
-  --vigintdecimal-color: #f5f5f5;
-  --centillion-color: #f5f5f5;
-  --primary-bg-color: #f5f5f5;
-  --secondary-bg-color: #f5f5f5;
-  --tertiary-bg-color: #f5f5f5;
-  --quaternary-bg-color: #f5f5f5;
-  --quinary-bg-color: #f5f5f5;
-  --senary-bg-color: #f5f5f5;
-  --septenary-bg-color: #f5f5f5;
+  /*=== Colors ===*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --bg-color: hsl(220, 18%, 78%);
+  --bg-color-light: hsl(220, 18%, 86%);
+  --title-color: hsl(220, 8%, 10%);
+  --text-color: hsl(220, 4%, 32%);
+  --text-color-light: hsl(220, 4%, 55%);
+  --body-color: hsl(220, 18%, 99%);
+  --container-color: hsl(220, 18%, 97%);
+
+  /*===Font and typography ===*/
+  --body-font: "Nunito", sans-serif;
+  --title-font: "Gayathri", sans-serif;
+  --defaut-font-size: 1.2rem;
+  --h1-font-size: calc(var(--defaut-font-size) * 2.5);
+
+  --xx-large-font: 2.25rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+body {
+  background: burlywood;
+  font-family: var(--body-font);
+}
+
+/*=== BASE ===*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ody {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: 0.4s; /*For animation dark mode*/
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+
+/*========== Button Dark/Light ==========*/
+
+/*==========
+    Color changes in some parts of
+    the website, in dark theme
+==========*/
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+/*=============== HEADER & NAV ===============*/
+
+/* Change background header */
+
+/* Active link */
+
+/*=============== HOME ===============*/
+
+/*=============== BUTTON ===============*/
+
+/*=============== NEW ===============*/
+
+/*=============== COLLECTION ===============*/
+
+/*=============== PRODUCTS ===============*/
+
+/* Swiper class */
+
+/*=============== BRANDS ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== SCROLL BAR ===============*/
+
+/*=============== SCROLL UP ===============*/
+
+/* Show Scroll Up*/
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
+
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+
+/* For 4K resolutions (3840 x 2160, 4096 x 2160) */
