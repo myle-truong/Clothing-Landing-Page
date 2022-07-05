@@ -1,41 +1,53 @@
-/*=== Google fonts ===*/
+/* Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Nunito:ital,wght@0,200;0,400;1,200&family=Varela+Round&display=swap");
 
-/*=== Variables===*/
+/* Variables */
 :root {
   --header-gap: 3.5rem;
 
-  /*=== Colors ===*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  /* Colors */
+  /* Color mode HSL(hue, saturation, lightness)*/
   --bg-color: hsl(220, 18%, 78%);
   --bg-color-light: hsl(220, 18%, 86%);
   --title-color: hsl(220, 8%, 10%);
   --text-color: hsl(220, 4%, 32%);
   --text-color-light: hsl(220, 4%, 55%);
-  --body-color: hsl(220, 18%, 99%);
+  --body-color: hsl(240, 19%, 93%);
   --container-color: hsl(220, 18%, 97%);
 
-  /*===Font and typography ===*/
+  /* Font and typography */
   --body-font: "Nunito", sans-serif;
   --title-font: "Gayathri", sans-serif;
-  --defaut-font-size: 1.1rem;
-  --h1-font-size: calc(var(--defaut-font-size) * 2.5);
+  --defaut-font-size: 1rem;
+  --xlarge-font-size: calc(var(--defaut-font-size) * 2.25);
+  --h1-font-size: calc(var(--defaut-font-size) * 1.5);
+  --h2-font-size: calc(var(--defaut-font-size) * 1.25);
+  --h3-font-size: calc(var(--defaut-font-size) * 1.1);
+  --normal-font-size: calc(var(--defaut-font-size) * 0.9);
+  --small-font-size: calc(var(--defaut-font-size) * 0.8);
+  --smaller-font-size: calc(var(--defaut-font-size) * 0.5);
 
-  --xx-large-font: 2.25rem;
-
-  /*=== Font weight ===*/
+  /* Font weight */
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*=== z index ===*/
+  /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-body {
-  background: burlywood;
-  font-family: var(--body-font);
+/* Reponsive */
+@media (min-width: 1124px) {
+  :root {
+    --xlarge-font-size: calc(var(--defaut-font-size) * 4.5);
+    --h1-font-size: calc(var(--defaut-font-size) * 2.25);
+    --h2-font-size: calc(var(--defaut-font-size) * 1.5);
+    --h3-font-size: calc(var(--defaut-font-size) * 1.25);
+    --normal-font-size: calc(var(--defaut-font-size) * 1);
+    --small-font-size: calc(var(--defaut-font-size) * 0.875);
+    --smaller-font-size: calc(var(--defaut-font-size) * 0.7);
+  }
 }
 
 /*=== BASE ===*/
@@ -48,7 +60,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
-ody {
+body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -109,6 +121,57 @@ img {
 }
 
 /*=== Header and Nav ===*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: var(--z-fixed);
+  transition: 0.4s;
+}
+
+.nav {
+  height: var(--header-gap);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 1.5rem;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 12px hsl(220, 18%, 40%, 0.15);
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 1.25rem 2.8rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__link{
+    font-size: var(--normal-font-size);
+    color: var(--text-color-light);
+    font-weight: var(--font-medium);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+  }
+}
 
 /* Change background header */
 
