@@ -18,17 +18,17 @@
   /*===Font and typography ===*/
   --body-font: "Nunito", sans-serif;
   --title-font: "Gayathri", sans-serif;
-  --defaut-font-size: 1.2rem;
+  --defaut-font-size: 1.1rem;
   --h1-font-size: calc(var(--defaut-font-size) * 2.5);
 
   --xx-large-font: 2.25rem;
 
-  /*========== Font weight ==========*/
+  /*=== Font weight ===*/
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== z index ==========*/
+  /*=== z index ===*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -75,17 +75,14 @@ img {
   max-width: 100%;
   height: auto;
 }
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
+/*=== Theme ===*/
+/*=== Dark theme ===*/
 
-/*========== Button Dark/Light ==========*/
+/*=== Button Dark/Light ===*/
 
-/*==========
-    Color changes in some parts of
-    the website, in dark theme
-==========*/
+/* Color changes in some parts of the website, in dark theme */
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*=== Classes ===*/
 .container {
   max-width: 1024px;
   margin-right: 1.5rem;
@@ -111,35 +108,35 @@ img {
   overflow: hidden; /* For animation ScrollReveal */
 }
 
-/*=============== HEADER & NAV ===============*/
+/*=== Header and Nav ===*/
 
 /* Change background header */
 
 /* Active link */
 
-/*=============== HOME ===============*/
+/*=== Home ===*/
 
-/*=============== BUTTON ===============*/
+/*=== Button===*/
 
-/*=============== NEW ===============*/
+/*=== New products ===*/
 
-/*=============== COLLECTION ===============*/
+/*=== Collections ===*/
 
-/*=============== PRODUCTS ===============*/
+/*=== Products ===*/
 
 /* Swiper class */
 
-/*=============== BRANDS ===============*/
+/*=== Bands ===*/
 
-/*=============== FOOTER ===============*/
+/*=== Footer ===*/
 
-/*=============== SCROLL BAR ===============*/
+/*=== Scroll bar ===*/
 
-/*=============== SCROLL UP ===============*/
+/*=== Scroll up===*/
 
 /* Show Scroll Up*/
 
-/*=============== BREAKPOINTS ===============*/
+/*=== Break point ===*/
 /* For small devices */
 
 /* For medium devices */
