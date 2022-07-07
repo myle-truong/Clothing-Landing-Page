@@ -25,7 +25,7 @@
   --h3-font-size: calc(var(--defaut-font-size) * 1.1);
   --normal-font-size: calc(var(--defaut-font-size) * 0.9);
   --small-font-size: calc(var(--defaut-font-size) * 0.8);
-  --smaller-font-size: calc(var(--defaut-font-size) * 0.5);
+  --smaller-font-size: calc(var(--defaut-font-size) * 0.6);
 
   /* Font weight */
   --font-regular: 400;
@@ -163,13 +163,18 @@ img {
     justify-content: space-between;
     align-items: center;
   }
-  .nav__link{
-    font-size: var(--normal-font-size);
+  .nav__link {
     color: var(--text-color-light);
     font-weight: var(--font-medium);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: 0.4s;
+    display: grid;
+    justify-items: center;
+    row-gap: 0.2rem;
+  }
+  .nav__link i {
+    font-size: var(--h3-font-size);
+  }
+  .nav__link span {
+    font-size: var(--small-font-size);
   }
 }
 
