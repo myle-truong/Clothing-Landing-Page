@@ -15,13 +15,13 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <!--==== CSS Swipers ====-->
-    <!--==== CSS ====-->
+    <!---------- CSS Swipers -------->
+    <!---------- CSS ----------->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <!--=== HEADER ===-->
+    <!-- HEADER -->
     <header class="header" id="header">
       <nav class="nav contaner">
         <a href="" class="nav__logo">My Shop</a>
@@ -67,27 +67,88 @@
             </li>
           </ul>
         </div>
+
         <!-- dark mood -->
         <i class="ri-moon-line"></i>
       </nav>
     </header>
-    <main>
-      <!--===HOME ===================-->
-      <section class="home section" id="home"></section>
+    <main class="main">
+      <!------------------- HOME ------------->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home_title">New Arrivals</h1>
+            <p class="home__description">
+              Let open the door and be the frist one with our new collection
+            </p>
+            <a href="#new" class="button__link"
+              >Explore
+              <!-- <i class="ri-door-open-line"></i> -->
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <div class="home__images">
+            <img src="./assets/img/product02 a.jpg" alt="home image" s />
+            <img src="./assets/img/product05 b.jpg" alt="home image" s />
+          </div>
+        </div>
+      </section>
+      <!------------------- NEW ------------->
+      <section class="new section" id="new">
+        <h2 class="section__title">New categories</h2>
+        <div class="new__container container grid">
+          <article class="new__card">
+            <img src="./assets/img/new04.jpg" alt="" class="new__img" />
+            <a href="£" class="new__link">
+              <div class="new__data">
+                <h2 class="new__title">Dresses</h2>
+                <span class="new__subtitle">Party dresses</span>
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+            <!-- new01 -->
+          </article>
+        </div>
 
-      <!--==================== NEW ====================-->
-      <section class="new section" id="new"></section>
+        <div class="new__container container grid">
+          <article class="new__card">
+            <img src="./assets/img/new02.jpg" alt="" class="new__img" />
+            <a href="£" class="new__link">
+              <div class="new__data">
+                <h2 class="new__title">Midi dress</h2>
+                <span class="new__subtitle">Fresh</span>
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+            <!-- new01 -->
+          </article>
+        </div>
 
-      <!--==================== COLLECTION ====================-->
+        <div class="new__container container grid">
+          <article class="new__card">
+            <img src="./assets/img/new03.jpg" alt="" class="new__img" />
+            <a href="£" class="new__link">
+              <div class="new__data">
+                <h2 class="new__title">Unisex</h2>
+                <span class="new__subtitle">New looks</span>
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </a>
+            <!-- new01 -->
+          </article>
+        </div>
+      </section>
+
+      <!------------------- COLLECTION ------------->
       <section class="collection section" id="collection"></section>
 
-      <!--==================== PRODUCTS ====================-->
+      <!------------------- PRODUCTION ------------->
       <section class="products section" id="products"></section>
 
-      <!--==================== BRANDS ====================-->
+      <!------------------- BRANDS ------------->
       <section class="brand section"></section>
     </main>
-    <!--==== FOOTER ===-->
+    <!------------------- FOOTER ------------->
     <footer class="footer section"></footer>
   </body>
 </html>

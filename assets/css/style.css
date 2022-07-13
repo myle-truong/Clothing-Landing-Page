@@ -19,7 +19,7 @@
   --body-font: "Nunito", sans-serif;
   --title-font: "Gayathri", sans-serif;
   --defaut-font-size: 1rem;
-  --xlarge-font-size: calc(var(--defaut-font-size) * 2.25);
+  --big-font-size: calc(var(--defaut-font-size) * 2.25);
   --h1-font-size: calc(var(--defaut-font-size) * 1.5);
   --h2-font-size: calc(var(--defaut-font-size) * 1.25);
   --h3-font-size: calc(var(--defaut-font-size) * 1.1);
@@ -40,7 +40,7 @@
 /* Reponsive */
 @media (min-width: 1124px) {
   :root {
-    --xlarge-font-size: calc(var(--defaut-font-size) * 4.5);
+    --big-font-size: calc(var(--defaut-font-size) * 4.5);
     --h1-font-size: calc(var(--defaut-font-size) * 2.25);
     --h2-font-size: calc(var(--defaut-font-size) * 1.5);
     --h3-font-size: calc(var(--defaut-font-size) * 1.25);
@@ -183,9 +183,61 @@ img {
 /* Active link */
 
 /*=== Home ===*/
+.home {
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+.home__container {
+  padding: 4rem 0 1rem;
+  row-gap: 8.5rem;
+}
+.home__title {
+  font-size: var(--big-font-size);
+  font-weight: 400;
+}
+.home__description {
+  color: var(--title-color);
+  margin: 1rem 0 2rem;
+}
+.home__title,
+.home__description {
+  line-height: 140%;
+}
+.home__images {
+  position: relative;
+  width: 19.5rem;
+  justify-self: center;
+}
 
+.home__images img:nth-child(1) {
+  width: 14rem;
+  position: absolute;
+  right: -1.5rem;
+  top: -9.5rem;
+}
+
+.home__images img:nth-child(2) {
+  width: 11.25rem;
+  position: relative;
+  margin-left: 0.5rem;
+}
 /*=== Button===*/
+.button__link {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
 
+.button__link i {
+  font-size: var(--h3-font-size);
+  transition: 0.3s;
+}
+
+.button__link:hover i {
+  transform: translateX(0.3rem);
+}
 /*=== New products ===*/
 
 /*=== Collections ===*/
