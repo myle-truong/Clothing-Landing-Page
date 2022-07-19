@@ -283,6 +283,50 @@ img {
 
 /*=== Collections ===*/
 
+.collection {
+  background-color: var(--bg-color-light);
+  overflow: hidden;
+}
+
+.collection__container {
+  position: relative;
+  height: 36rem;
+  display: grid;
+  justify-items: center;
+}
+
+.colletion__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.collection__expolre {
+  display: grid;
+  column-gap: 2rem;
+  position: absolute;
+}
+
+.collection__expolre:nth-child(2) {
+  grid-template-columns: 15.4rem max-content;
+  bottom: 1rem;
+  margin-right: 5rem;
+}
+
+.collection__expolre:nth-child(1) {
+  grid-template-columns: max-content 15.3rem;
+  top: 0;
+  margin-left: 5rem;
+}
+
+.collection__data-men {
+  margin-top: 2.5rem;
+}
+
+.collection__data-women {
+  align-self: flex-end;
+  margin-bottom: 2.5rem;
+}
+
 /*=== Products ===*/
 
 /* Swiper class */
